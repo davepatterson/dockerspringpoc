@@ -1,3 +1,4 @@
+# simple docker file to run spring boot application in container
 FROM amazoncorretto:17.0.15
 RUN yum update -y && yum install -y shadow-utils
 RUN groupadd spring && useradd -g spring spring
