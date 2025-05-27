@@ -15,7 +15,7 @@ public class KafkaController {
     @GetMapping({"/send", "/send/"})
     public String sendMessage() {
         String message = "A simple test message";
-        messageProducer.sendMessage("carriersni", message);
+        messageProducer.sendMessage("carriers", message);
         return "Message sent: " + message;
     }
 
